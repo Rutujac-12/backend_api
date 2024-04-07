@@ -15,4 +15,5 @@ router.post('/signup', signup);
 router.get('/getdet/:username', getGithubDetails);
 router.get('/get/:name', getcountry);
 
+
 export default router;

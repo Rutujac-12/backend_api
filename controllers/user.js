@@ -59,7 +59,11 @@ export const getcountry = (req, res) => {
 
     axios.get(API)
         .then((response) => {
-            res.json(response.data);
+            
+
+            const countryData = response.data[0];
+            const currencies = countryData.currencies;
+            res.json(currencies);
         })
         .catch((err) => {
             console.log("Error occurred while fetching country details: ", err);
