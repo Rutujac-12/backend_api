@@ -123,8 +123,8 @@ export const youtubeDetails = (req, res) => {
                 </div>
             `);
         }
-        const videosHTML = array.join(''); // Joining the array elements to form a single HTML string
-        // Sending HTML response
+        const videosHTML = array.join(''); 
+        
         res.send(`
             <!DOCTYPE html>
             <html lang="en">
@@ -135,7 +135,7 @@ export const youtubeDetails = (req, res) => {
             </head>
             <body>
                 <h1>YouTube Videos</h1>
-                ${videosHTML} // Embedding the videos HTML
+                ${videosHTML} 
             </body>
             </html>
         `);
